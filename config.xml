@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.example.grim2d" version="4.0.1"
+  xmlns="http://www.w3.org/ns/widgets"
+  xmlns:cdv="http://cordova.apache.org/ns/1.0">
+  <name>HaimsProject</name>
+  <description>Haim's Project</description>
+  <author email="dev@example.com">Haim</author>
+  <content src="index.html" />
+  <preference name="fullscreen" value="true"/>
+  <preference name="orientation" value="portrait"/>
+  <platform name="android" />
+</widget>

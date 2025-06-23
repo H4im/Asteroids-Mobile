@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Haim's Project</title>
+  <style>
+    body { margin: 0; overflow: hidden; background: #000; }
+    #gameCanvas { display: block; width: 100vw; height: 100vh; touch-action: none; background: #111; }
+    .joystickBase {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.1);
+      z-index: 10;
+      touch-action: none;
+    }
+    .joystickStick {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.5);
+      top: 25px;
+      left: 25px;
+    }
+    #leftJoystick { bottom: 20px; left: 20px; }
+    #rightJoystick { bottom: 20px; right: 20px; }
+  </style>
+</head>
+<body>
+  <canvas id="gameCanvas"></canvas>
+  <div id="leftJoystick" class="joystickBase"><div class="joystickStick"></div></div>
+  <div id="rightJoystick" class="joystickBase"><div class="joystickStick"></div></div>
+  <script src="js/game.js"></script>
+</body>
+</html>
